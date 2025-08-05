@@ -7,8 +7,7 @@
 
 ## Descripción
 
-Este repositorio acompaña al curso de Big Data de maestría y es el punto central para la integración y realización de todas las prácticas. Aquí encontrarás materiales organizados en cinco unidades progresivas que abarcan desde los fundamentos teóricos hasta la aplicación avanzada de técnicas y herramientas en entornos reales de Big Data.  del Tecnológico Superior de Jalisco campus Zapopan.
-
+Este repositorio acompaña al curso de Big Data de maestría del Tecnológico Superior de Jalisco Campus Zapopan, y es el punto central para la integración y realización de todas las prácticas. Aquí encontrarás materiales organizados en cinco unidades progresivas que abarcan desde los fundamentos teóricos hasta la aplicación avanzada de técnicas y herramientas en entornos reales de Big Data.  
 La parte práctica del curso se gestiona a través de este repositorio oficial, siguiendo las mejores prácticas profesionales para la gestión de proyectos, colaboración y control de versiones con GitHub.
 
 ---
