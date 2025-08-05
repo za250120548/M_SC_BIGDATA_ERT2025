@@ -54,6 +54,40 @@ Las prácticas están diseñadas para acompañar cada sección del curso y se en
 - **Curso: Hello Git & GitHub (Nivel Principiante)**
   - Aprende los conceptos fundamentales y el uso profesional de Git y GitHub.
   - Incluye lecciones, ejercicios y retos enfocados en flujos colaborativos, integración continua y automatización.
+- **Curso: Hello Git \& GitHub (Nivel Principiante)**
+  - Aprende los conceptos fundamentales y el uso profesional de Git y GitHub, ideal para quienes inician en flujos colaborativos e integración continua.
+
+---
+
+### Bibliografía Básica
+
+- Bengfort, B. \& Kim, J. (2016). Data Analytics with Hadoop: An Introduction for Data Scientists. O’Reilly Media.
+- Han, J. \& Kamber, M. (2011). Data Mining: Concepts and Techniques (3rd ed.). Morgan Kaufmann.
+- Hu, F. (2016). Big Data: Storage, Sharing, and Security. CRC Press.
+- Karau, H., Konwinski, A., Wendell, P., \& Zaharia, M. (2015). Learning Spark: Lightning-Fast Big Data Analysis. O’Reilly Media.
+- Lublinsky, B., Smith, K. T., \& Yakubovich, A. (2013). Professional Hadoop Solutions. John Wiley \& Sons.
+- Marz, N. \& Warren, J. (2015). Big Data: Principles and Best Practices of Scalable Real-Time Data Systems. Manning Publications.
+- White, T. (2015). Hadoop: The Definitive Guide (4th ed.). O’Reilly Media.
+- Provost, F. \& Fawcett, T. (2013). Data Science for Business. O’Reilly Media.
+- García, A. M. (2017). Big Data: Gestión y explotación de grandes volúmenes de datos. Editorial UOC.
+- Joyanes Aguilar, L. (2013). Big Data: Análisis de grandes volúmenes de datos en organizaciones. Alfaomega.
+
+---
+
+### Bibliografía Complementaria
+
+- Marr, B. (2016). Big Data en la práctica: 45 casos de éxito con datos masivos. Gestión 2000.
+- Schmarzo, B. (2013). Big Data: Understanding How Data Powers Big Business. John Wiley \& Sons.
+- Simon, P. (2013). Too Big to Ignore: The Business Case for Big Data. Wiley.
+- Cukier, K. \& Mayer-Schönberger, V. (2013). Big Data: La revolución de los datos masivos. Turner Publicaciones.
+- Caballero, R. \& Martín, E. (2018). Las bases del Big Data. Anaya Multimedia.
+- Dumbill, E. (2012). Planning for Big Data. O’Reilly Media.
+- Rajaraman, A. \& Ullman, J. D. (2011). Mining of Massive Datasets. Cambridge University Press.
+- Kimball, R. \& Ross, M. (2013). The Data Warehouse Toolkit (3rd ed.). Wiley.
+- Gandomi, A. \& Haider, M. (2015). Beyond the Hype: Big Data Concepts, Methods, and Analytics. International Journal of Information Management.
+- Zikopoulos, P. \& Eaton, C. (2011). Understanding Big Data: Analytics for Enterprise Class Hadoop and Streaming Data. McGraw-Hill.
+- García, L. E. \& Menoyo, R. D. (2021). Fundamentos de la ciencia de datos. Editorial Universidad de Alcalá.
+- Hernández-Leal, E. J., Duque-Méndez, N. D., \& Moreno-Cadavid, J. (2017). Big Data: una exploración de investigaciones, tecnologías y casos de aplicación. TecnoLógicas, 20(39), 123-141.
 
 ---
 
