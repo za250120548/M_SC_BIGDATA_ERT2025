@@ -22,8 +22,15 @@ GitHub es una herramienta fundamental para la gestión colaborativa de proyectos
 - Facilitar la integración continua y la automatización de procesos.
 - Promover la investigación reproducible y la mejora continua.
 
-**¿Nuevo en GitHub?**  
+[**¿Nuevo en GitHub?**](https://docs.github.com/es/get-started/start-your-journey/hello-world)  
 Se recomienda consultar la guía oficial para crear tu primer proyecto "Hola Mundo" en GitHub.
+
+## Git & GitHub desde cero: Curso gratis
+
+<a href="https://mouredev.link/git"><img src="https://raw.githubusercontent.com/mouredev/hello-git/main/Media/header.jpg" style="height: 60%; width:60%;"/></a>
+
+[![Curso Git](https://img.shields.io/github/stars/mouredev/hello-git?label=Curso%20Git%20y%20GitHub&style=social)](https://github.com/mouredev/hello-git)
+
 
 ---
 
@@ -34,7 +41,7 @@ Las prácticas están diseñadas para acompañar cada sección del curso y se en
 **Para participar:**
 1. **Crea tu cuenta en GitHub** y/o inicia sesión.
 2. **Haz un fork de este repositorio** y trabaja en tu propia copia.
-3. **Resuelve las prácticas** de cada sección siguiendo las instrucciones del material.
+3. **Resuelve las prácticas** de cada sección siguiendo las instrucciones del profesor.
 4. **Colabora y comenta tu código** siguiendo las mejores prácticas de la industria.
 
 ---
@@ -46,16 +53,6 @@ Las prácticas están diseñadas para acompañar cada sección del curso y se en
 - Almacenamiento y Gestión Escalable de Datos
 - Análisis, Modelado y Machine Learning en Big Data
 - Visualización, Implementación y Proyectos
-
----
-
-## Recursos Recomendados
-
-- **Curso: Hello Git & GitHub (Nivel Principiante)**
-  - Aprende los conceptos fundamentales y el uso profesional de Git y GitHub.
-  - Incluye lecciones, ejercicios y retos enfocados en flujos colaborativos, integración continua y automatización.
-- **Curso: Hello Git \& GitHub (Nivel Principiante)**
-  - Aprende los conceptos fundamentales y el uso profesional de Git y GitHub, ideal para quienes inician en flujos colaborativos e integración continua.
 
 ---
 
@@ -99,3 +96,10 @@ Este repositorio y sus materiales se publican bajo la licencia [Creative Commons
 
 **¡Bienvenido(a) al curso y mucho éxito en tu aprendizaje y colaboración con Big Data!**
 
+## Contacto y apoyo:
+
+[![TecMM](https://img.shields.io/badge/TecMM-zapopan-0D3692?style=for-the-badge&logo=university&logoColor=white&labelColor=101010)](https://www.tecmm.edu.mx/)
+</br>
+[![Email](https://img.shields.io/badge/leon.ramos@zapopan.tecmm.edu.mx-email_institucional_(respuesta_lenta)-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:leon.ramos@zapopan.tecmm.edu.mx)
+</br>
+[![BuyMeACoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-apoya_mi_trabajo-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white&labelColor=101010)](https://paypal.me/cdci?locale.x=es_XC&country.x=MX)
