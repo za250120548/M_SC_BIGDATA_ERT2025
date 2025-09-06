@@ -15,15 +15,15 @@ Este curso invita a abordar los desafíos del Big Data con un enfoque **colabora
 
 ## 🧩 Escenario Hipotético de Clase
 
-**LeadData** es una start-up que lanzó su nuevo método de pago hace ocho meses. Inicialmente, la empresa tenía alrededor de **750 clientes** y, desde entonces, ha sumado aproximadamente **150,000 nuevos clientes cada mes**. Este año, la proyección es alcanzar un incremento promedio de **225,000 clientes mensuales**.
+**BookstoneData** es una start-up que lanzó su nuevo método de pago hace ocho meses. Inicialmente, la empresa tenía alrededor de **750 clientes** y, desde entonces, ha sumado aproximadamente **150,000 nuevos clientes cada mes**. Este año, la proyección es alcanzar un incremento promedio de **225,000 clientes mensuales**.
 
-LeadData opera mediante sprints de dos semanas, utiliza **Git** para el control de versiones y **GitHub** como plataforma central de colaboración y gestión de código para todos sus departamentos. Todos sus servicios están desplegados en la nube, usando **Amazon Web Services (AWS)** como proveedor principal.
+BookstoneData opera mediante sprints de dos semanas, utiliza **Git** para el control de versiones y **GitHub** como plataforma central de colaboración y gestión de código para todos sus departamentos. Todos sus servicios están desplegados en la nube, usando **Amazon Web Services (AWS)** como proveedor principal.
 
 Este escenario simula la velocidad de crecimiento y los retos tecnológicos a los que te enfrenarás como **Junior Data Engineer**. Requiere soluciones de adquisición, almacenamiento, procesamiento, modelado y visualización de datos escalables y eficientes, alineadas con metodologías ágiles y Lean.
 
 ---
 
-## 🎯 ¿Qué se espera del proyecto final?
+## 🎯 ¿Qué se espera del proyecto final de la materia?
 
 - **Definir una problemática de alto impacto**: Detectar una necesidad real que afecte a múltiples personas, más allá de casos individuales.
 - **Propuesta Lean**: Plantear una solución alineada con los principios Lean: eliminar desperdicios, optimizar procesos y generar el mayor valor posible al usuario y la organización.
@@ -57,7 +57,7 @@ Estos enlaces proporcionan una base teórica y ejemplos prácticos para inspirar
 - **Pensamiento crítico y analítico**: Diagnóstico efectivo, justificación de problemáticas, y evaluación de alternativas.
 - **Colaboración ágil y liderazgo compartido**: Trabajo coordinado, gestión de diferencias y aprendizaje mutuo.
 - **Gestión del cambio**: Implementación de soluciones que mejoren procesos y generen impacto duradero.
-- **Compromiso social profesional**: Enfoque en soluciones que respondan a retos reales y beneficien a la colectividad[attached_file:1].
+- **Compromiso social profesional**: Enfoque en soluciones que respondan a retos reales y beneficien a la colectividad.
 
 ---
 
@@ -71,5 +71,5 @@ Estos enlaces proporcionan una base teórica y ejemplos prácticos para inspirar
 
 ---
 
-> 🌟 **El objetivo es que lleves a la práctica los conceptos de las 5 unidades, desarrollando una propuesta innovadora y colaborativa que mejore la vida de las personas y fomente la eficiencia sustentable en la era del Big Data.**[attached_file:1]
+> 🌟 **El objetivo es que lleves a la práctica los conceptos de las 5 unidades, desarrollando una propuesta innovadora y colaborativa que mejore la vida de las personas y fomente la eficiencia sustentable en la era del Big Data.**
 
