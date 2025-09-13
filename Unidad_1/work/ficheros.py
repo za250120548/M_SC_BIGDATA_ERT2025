@@ -1,5 +1,8 @@
 import csv
 import xlrd
+import json
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
 
 
 
@@ -54,8 +57,75 @@ def excel_file():
                 asocs[asoc] = asocs.get(asoc, 0) + subvencion
         print(asocs)
 
+def json_file():
+    with open('subvenciones.json', encoding='utf-8') as fich_lect, \
+        open('subvenciones_reformateado.json', 'w', encoding='utf-8') as fich_escr:
+        datos = json.load(fich_lect)
+        asoc_str = "Asociación"
+        act_str = "Actividad Subvencionada"
+        imp_str = "Importe en euros"
+        lista, list_act = [], []
+        asoc_actual, dicc = "", {}
+        for elem in datos:
+            asoc = elem[asoc_str]
+            act = elem[act_str]
+            imp = elem[imp_str]
+            if asoc_actual != asoc:
+                if asoc_actual != "":
+                    dicc["Actividades"] = list_act
+                    lista.append(dicc)
+                list_act = []
+                dicc = {"Asociación": asoc}
+            list_act.append({act_str: act, imp_str: imp})
+            asoc_actual = asoc
+        if dicc and list_act:
+            dicc["Actividades"] = list_act
+            lista.append(dicc)
+        json.dump(lista, fich_escr, ensure_ascii=False, indent=4)
+
+def xml_file():
+    arbol = ET.parse('subvenciones.xml')
+    raiz = arbol.getroot()
+    asocs = {}
+    for fila in raiz.findall('Row'):
+        centro = fila.find('Asociaci_n').text
+        subvencion = float(fila.find('Importe').text)
+        asocs[centro] = asocs.get(centro, 0) + subvencion
+    print(asocs)
+
+def xml_arbol():
+    arbol = ET.parse('subvenciones.xml')
+    raiz = arbol.getroot()
+    asocs = {}
+    for fila in raiz.findall('Row'):
+        centro = fila.find('Asociaci_n').text
+        subvencion = float(fila.find('Importe').text)
+        asocs[centro] = asocs.get(centro, 0) + subvencion
+    print(asocs)
+    
+    nuevo = ET.ElementTree()
+    raiz_nueva = ET.Element("Raiz")
+    nuevo._setroot(raiz_nueva)
+
+    for centro, total in asocs.items():
+        elem_actual = ET.SubElement(raiz_nueva, "Asociacion")
+        elem_actual.set('nombre', centro)
+        actividades = ET.SubElement(elem_actual, "Actividades")
+        # Por simplicidad, asociar aquí las actividades si se dispone del listado original
+        gas_total = ET.SubElement(elem_actual, "Total")
+        gas_total.text = str(total)
+
+    xml_string = ET.tostring(raiz_nueva, encoding='utf-8', method='xml')
+    formatted_xml = xml.dom.minidom.parseString(xml_string).toprettyxml(indent="   ")
+
+    with open('subvenciones_reorganizado.xml', 'w', encoding='utf-8') as f:
+        f.write(formatted_xml)
+
 if __name__ == "__main__":
-    #read_csv()
-    #add_columns()
-    #convert_csv_tsv('subvenciones.csv', 'subvenciones.tsv')
+    read_csv()
+    add_columns()
+    convert_csv_tsv('subvenciones.csv', 'subvenciones.tsv')
     excel_file()
+    json_file()
+    xml_file()
+    xml_arbol()
