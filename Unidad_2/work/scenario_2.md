@@ -64,5 +64,5 @@ Referirse al archivos PDF BigData_ProcLotes.pdf
 
 ![Silver Star Schema](/images/Silver_StartSchema.png)
 
-![Gold PII & Masking](/images/BigData_Golden_PII_masking.png)
+![Gold PII & Masking](/Unidad_2/work/images/BigData_Golden_PII_masking.png)
 
