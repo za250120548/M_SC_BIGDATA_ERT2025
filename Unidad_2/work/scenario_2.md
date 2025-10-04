@@ -58,11 +58,11 @@ Ejemplo
 ## Actividad en pdAdmin4 y creacion de Tablas
 Referirse al archivos PDF BigData_ProcLotes.pdf
 
-![Carga de Datos "raw"](/images/raw_pub.png)
+![Carga de Datos "raw"](/Unidad_2/work/images/raw_pub.png)
 
-![Bronze Normalizacion](/images/Bronze_normalization.png)
+![Bronze Normalizacion](/Unidad_2/work/images/Bronze_normalization.png)
 
-![Silver Star Schema](/images/Silver_StartSchema.png)
+![Silver Star Schema](/Unidad_2/work/images/Silver_StartSchema.png)
 
 ![Gold PII & Masking](/Unidad_2/work/images/BigData_Golden_PII_masking.png)
 
