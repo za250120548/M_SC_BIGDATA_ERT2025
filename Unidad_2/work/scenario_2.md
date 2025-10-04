@@ -35,7 +35,7 @@ SET person_name = REGEXP_REPLACE(person_name, '^(Lic\.|Sr\.|Dr\.)\s*', '', 'i')
 WHERE person_name ~* '^(Lic\.|Sr\.|Dr\.)';
 
 
-## Remover vocales acentuadas de correo
+### Remover vocales acentuadas de correo
 SELECT
   email,
   REGEXP_REPLACE(
@@ -52,5 +52,5 @@ WHERE email ~* '[áéíóú]';
 
 
 ## Actividad en pdAdmin4 y creacion de Tablas
-Referirse al archivos PDF BigData_Proclotes.pdf
+Referirse al archivos PDF BigData_ProcLotes.pdf
 
