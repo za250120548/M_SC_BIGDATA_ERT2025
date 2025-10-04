@@ -53,7 +53,7 @@ def generate_record(fake: Faker) -> list:
 def write_to_csv(file_path: str, rows: int, locale: str)-> None:
     fake = create_data(locale)
     logging.info(f"Faker locale set to: {locale}")
-
+    print(f"Generating {rows} records...")
     with open(file_path, mode="w", encoding="utf-8", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(headers)
@@ -90,13 +90,17 @@ if __name__ == "__main__":
     logging.info(f"Started batch processing for {date.today()}.")
     locale = "es_MX"
     output_file =  f"./data/batch_{date.today()}.csv"
-
+    #output_file =  f"./data/batch_2025-09-24.csv"
+    
     if str(date.today()) == "2025-09-24":
-        records = random.randint(50, 50)
+        records = random.randint(300_372, 300_372)
         run_type = "first"
     else:
-        records = random.randint(0, 10)
+        records = random.randint(1, 1_101)
         run_type = "next"
+    
+    #run_type = "first"
+    #records = random.randint(300_372, 300_372)
 
     write_to_csv(output_file, records, locale)
 
