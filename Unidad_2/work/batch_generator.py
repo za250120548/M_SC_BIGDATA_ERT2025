@@ -39,10 +39,10 @@ def generate_record(fake: Faker) -> list:
     ip_address = fake.ipv4()
     iban = fake.iban()
     accessed_at = fake.date_time_between("-1y")
-    session_duration = random.randint(0, 36000)
-    download_speed = random.randint(0, 1000)
+    session_duration = random.randint(0, 36_000)
+    download_speed = random.randint(0, 1_000)
     upload_speed = random.randint(0, 800)
-    consumed_traffic = random.randint(0, 2000000)
+    consumed_traffic = random.randint(0, 2_000_000)
 
     return [
         person_name, user_name, email, personal_number, birth_date,
