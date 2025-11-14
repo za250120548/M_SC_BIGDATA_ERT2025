@@ -1,0 +1,50 @@
+{
+    "Crawler": {
+        "Name": "staging_dim_address",
+        "Role": "Glue_role",
+        "Targets": {
+            "S3Targets": [
+                {
+                    "Path": "s3://driven-data-bucket-ert/data/staging/dim_address/",
+                    "Exclusions": []
+                }
+            ],
+            "JdbcTargets": [],
+            "MongoDBTargets": [],
+            "DynamoDBTargets": [],
+            "CatalogTargets": [],
+            "DeltaTargets": [],
+            "IcebergTargets": [],
+            "HudiTargets": []
+        },
+        "DatabaseName": "driven_data_db",
+        "Classifiers": [],
+        "RecrawlPolicy": {
+            "RecrawlBehavior": "CRAWL_EVERYTHING"
+        },
+        "SchemaChangePolicy": {
+            "UpdateBehavior": "UPDATE_IN_DATABASE",
+            "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+        },
+        "LineageConfiguration": {
+            "CrawlerLineageSettings": "DISABLE"
+        },
+        "State": "READY",
+        "CrawlElapsedTime": 0,
+        "CreationTime": "2025-11-08T20:52:57+00:00",
+        "LastUpdated": "2025-11-09T19:20:42+00:00",
+        "LastCrawl": {
+            "Status": "SUCCEEDED",
+            "LogGroup": "/aws-glue/crawlers",
+            "LogStream": "staging_dim_address",
+            "MessagePrefix": "aa3812b6-40bd-46ed-abc7-cc6e9019d5e3",
+            "StartTime": "2025-11-12T02:54:20+00:00"
+        },
+        "Version": 2,
+        "Configuration": "{\"Version\":1.0,\"CreatePartitionIndex\":true}",
+        "LakeFormationConfiguration": {
+            "UseLakeFormationCredentials": false,
+            "AccountId": ""
+        }
+    }
+}

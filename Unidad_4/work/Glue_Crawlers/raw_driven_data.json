@@ -1,0 +1,50 @@
+{
+    "Crawler": {
+        "Name": "raw_driven_data",
+        "Role": "Glue_role",
+        "Targets": {
+            "S3Targets": [
+                {
+                    "Path": "s3://driven-data-bucket-ert/data/raw/",
+                    "Exclusions": []
+                }
+            ],
+            "JdbcTargets": [],
+            "MongoDBTargets": [],
+            "DynamoDBTargets": [],
+            "CatalogTargets": [],
+            "DeltaTargets": [],
+            "IcebergTargets": [],
+            "HudiTargets": []
+        },
+        "DatabaseName": "driven_data_db",
+        "Classifiers": [],
+        "RecrawlPolicy": {
+            "RecrawlBehavior": "CRAWL_EVERYTHING"
+        },
+        "SchemaChangePolicy": {
+            "UpdateBehavior": "UPDATE_IN_DATABASE",
+            "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+        },
+        "LineageConfiguration": {
+            "CrawlerLineageSettings": "DISABLE"
+        },
+        "State": "READY",
+        "CrawlElapsedTime": 0,
+        "CreationTime": "2025-11-08T20:39:34+00:00",
+        "LastUpdated": "2025-11-09T05:14:02+00:00",
+        "LastCrawl": {
+            "Status": "SUCCEEDED",
+            "LogGroup": "/aws-glue/crawlers",
+            "LogStream": "raw_driven_data",
+            "MessagePrefix": "c488f4bc-70bf-4c96-aadb-8909698b469c",
+            "StartTime": "2025-11-12T02:48:57+00:00"
+        },
+        "Version": 7,
+        "Configuration": "{\"Version\":1.0,\"CreatePartitionIndex\":true}",
+        "LakeFormationConfiguration": {
+            "UseLakeFormationCredentials": false,
+            "AccountId": ""
+        }
+    }
+}

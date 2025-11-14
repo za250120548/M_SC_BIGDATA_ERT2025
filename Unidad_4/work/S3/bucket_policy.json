@@ -1,0 +1,3 @@
+{
+    "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"glue_amazonaws\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"glue.amazonaws.com\"},\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::driven-data-bucket-ert/data/raw/*\",\"Condition\":{\"ArnLike\":{\"aws:SourceArn\":\"arn:aws:glue:us-east-1:367226181161:job/*\"}}}]}"
+}

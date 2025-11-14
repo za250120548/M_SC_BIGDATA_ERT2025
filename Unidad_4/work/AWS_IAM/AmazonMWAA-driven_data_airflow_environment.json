@@ -1,0 +1,109 @@
+//Customer Managed
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "airflow:PublishMetrics",
+            "Resource": "arn:aws:airflow:us-east-1:367226181161:environment/driven_data_airflow_environment"
+        },
+        {
+            "Effect": "Deny",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": [
+                "arn:aws:s3:::driven-data-bucket-ert",
+                "arn:aws:s3:::driven-data-bucket-ert/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:PutObject",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::driven-data-bucket-ert",
+                "arn:aws:s3:::driven-data-bucket-ert/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents",
+                "logs:GetLogEvents",
+                "logs:GetLogRecord",
+                "logs:GetLogGroupFields",
+                "logs:GetQueryResults"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:DescribeLogGroups"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "cloudwatch:PutMetricData",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sqs:ChangeMessageVisibility",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes",
+                "sqs:GetQueueUrl",
+                "sqs:ReceiveMessage",
+                "sqs:SendMessage"
+            ],
+            "Resource": "arn:aws:sqs:us-east-1:*:airflow-celery-*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:GenerateDataKey*",
+                "kms:Encrypt"
+            ],
+            "NotResource": "arn:aws:kms:*:367226181161:key/*",
+            "Condition": {
+                "StringLike": {
+                    "kms:ViaService": [
+                        "sqs.us-east-1.amazonaws.com"
+                    ]
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetJob",
+                "glue:StartJobRun",
+                "glue:GetJobRun",
+                "glue:GetCrawler",
+                "glue:StartCrawler",
+                "glue:GetCrawlerMetrics"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "iam:GetRole",
+            "Resource": "arn:aws:iam::367226181161:role/Glue_role"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "Crawler": {
+        "Name": "staging_dim_finance",
+        "Role": "Glue_role",
+        "Targets": {
+            "S3Targets": [
+                {
+                    "Path": "s3://driven-data-bucket-ert/data/staging/staging_dim_finance/",
+                    "Exclusions": []
+                }
+            ],
+            "JdbcTargets": [],
+            "MongoDBTargets": [],
+            "DynamoDBTargets": [],
+            "CatalogTargets": [],
+            "DeltaTargets": [],
+            "IcebergTargets": [],
+            "HudiTargets": []
+        },
+        "DatabaseName": "driven_data_db",
+        "Classifiers": [],
+        "RecrawlPolicy": {
+            "RecrawlBehavior": "CRAWL_EVERYTHING"
+        },
+        "SchemaChangePolicy": {
+            "UpdateBehavior": "UPDATE_IN_DATABASE",
+            "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+        },
+        "LineageConfiguration": {
+            "CrawlerLineageSettings": "DISABLE"
+        },
+        "State": "READY",
+        "CrawlElapsedTime": 0,
+        "CreationTime": "2025-11-08T20:57:28+00:00",
+        "LastUpdated": "2025-11-09T19:21:30+00:00",
+        "LastCrawl": {
+            "Status": "SUCCEEDED",
+            "LogGroup": "/aws-glue/crawlers",
+            "LogStream": "staging_dim_finance",
+            "MessagePrefix": "7d2f2981-cd47-4805-b79a-94f2dc0f7b38",
+            "StartTime": "2025-11-12T02:53:29+00:00"
+        },
+        "Version": 2,
+        "Configuration": "{\"Version\":1.0,\"CreatePartitionIndex\":true}",
+        "LakeFormationConfiguration": {
+            "UseLakeFormationCredentials": false,
+            "AccountId": ""
+        }
+    }
+}

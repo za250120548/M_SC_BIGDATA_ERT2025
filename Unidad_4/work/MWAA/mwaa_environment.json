@@ -1,0 +1,73 @@
+{
+    "Environment": {
+        "Name": "driven_data_airflow_environment",
+        "Status": "AVAILABLE",
+        "Arn": "arn:aws:airflow:us-east-1:367226181161:environment/driven_data_airflow_environment",
+        "CreatedAt": "2025-11-07T04:49:55+00:00",
+        "WebserverUrl": "a4f4fe0a-11c2-4202-8ad8-e55e14fa9b33.c56.airflow.us-east-1.on.aws",
+        "ExecutionRoleArn": "arn:aws:iam::367226181161:role/service-role/AmazonMWAA-driven_data_airflow_environment-zE08dJ",
+        "ServiceRoleArn": "arn:aws:iam::367226181161:role/aws-service-role/airflow.amazonaws.com/AWSServiceRoleForAmazonMWAA",
+        "AirflowVersion": "2.10.1",
+        "SourceBucketArn": "arn:aws:s3:::driven-data-bucket-ert",
+        "DagS3Path": "dags/",
+        "PluginsS3Path": "lib/plugins.zip",
+        "PluginsS3ObjectVersion": "null",
+        "RequirementsS3Path": "requirements.txt",
+        "RequirementsS3ObjectVersion": "1QaHyj0_QRqPUr3yV6L9CkbGTB.f0162",
+        "AirflowConfigurationOptions": {},
+        "EnvironmentClass": "mw1.micro",
+        "MaxWorkers": 1,
+        "NetworkConfiguration": {
+            "SubnetIds": [
+                "subnet-0455a6ec9b78f5f92",
+                "subnet-04384642d118a4189"
+            ],
+            "SecurityGroupIds": [
+                "sg-02e398d416f62d386",
+                "sg-03b7998de6d60b91f"
+            ]
+        },
+        "LoggingConfiguration": {
+            "DagProcessingLogs": {
+                "Enabled": true,
+                "LogLevel": "WARNING",
+                "CloudWatchLogGroupArn": "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-DAGProcessing"
+            },
+            "SchedulerLogs": {
+                "Enabled": true,
+                "LogLevel": "WARNING",
+                "CloudWatchLogGroupArn": "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-Scheduler"
+            },
+            "WebserverLogs": {
+                "Enabled": true,
+                "LogLevel": "WARNING",
+                "CloudWatchLogGroupArn": "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-WebServer"
+            },
+            "WorkerLogs": {
+                "Enabled": true,
+                "LogLevel": "WARNING",
+                "CloudWatchLogGroupArn": "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-Worker"
+            },
+            "TaskLogs": {
+                "Enabled": true,
+                "LogLevel": "WARNING",
+                "CloudWatchLogGroupArn": "arn:aws:logs:us-east-1:367226181161:log-group:airflow-driven_data_airflow_environment-Task"
+            }
+        },
+        "LastUpdate": {
+            "Status": "SUCCESS",
+            "CreatedAt": "2025-11-09T23:07:59+00:00",
+            "WorkerReplacementStrategy": "FORCED"
+        },
+        "WeeklyMaintenanceWindowStart": "THU:07:00",
+        "Tags": {},
+        "WebserverAccessMode": "PUBLIC_ONLY",
+        "MinWorkers": 1,
+        "Schedulers": 1,
+        "DatabaseVpcEndpointService": "com.amazonaws.vpce.us-east-1.vpce-svc-0d8c62eeb81f66ada",
+        "CeleryExecutorQueue": "arn:aws:sqs:us-east-1:053571477437:airflow-celery-a4f4fe0a-11c2-4202-8ad8-e55e14fa9b33",
+        "EndpointManagement": "SERVICE",
+        "MinWebservers": 1,
+        "MaxWebservers": 1
+    }
+}

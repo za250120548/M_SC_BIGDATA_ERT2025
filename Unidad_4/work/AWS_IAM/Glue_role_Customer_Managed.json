@@ -1,0 +1,57 @@
+//glue-policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::driven-data-bucket-ert",
+                "arn:aws:s3:::driven-data-bucket-ert/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:CreateTable",
+                "glue:UpdateTable",
+                "glue:GetDatabase",
+                "glue:GetTable"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:CreateTable",
+                "glue:UpdateTable",
+                "glue:GetDatabase",
+                "glue:GetTable",
+                "glue:GetTables",
+                "glue:GetDatabases",
+                "glue:GetPartition",
+                "glue:CreatePartition",
+                "glue:UpdatePartition"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-1:367226181161:catalog",
+                "arn:aws:glue:us-east-1:367226181161:database/*",
+                "arn:aws:glue:us-east-1:367226181161:table/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "Roles": [
+        {
+            "Path": "/service-role/",
+            "RoleName": "AmazonMWAA-driven_data_airflow_environment-mmQf0v",
+            "RoleId": "AROAVLADC2YUW47QUGVSH",
+            "Arn": "arn:aws:iam::367226181161:role/service-role/AmazonMWAA-driven_data_airflow_environment-mmQf0v",
+            "CreateDate": "2025-11-01T00:45:00+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": [
+                                "airflow.amazonaws.com",
+                                "airflow-env.amazonaws.com"
+                            ]
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "AmazonMWAA-driven_data_airflow_environment-zE08dJ",
+            "RoleId": "AROAVLADC2YUY2FJIP5ZS",
+            "Arn": "arn:aws:iam::367226181161:role/service-role/AmazonMWAA-driven_data_airflow_environment-zE08dJ",
+            "CreateDate": "2025-11-07T04:48:31+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": [
+                                "airflow.amazonaws.com",
+                                "airflow-env.amazonaws.com"
+                            ]
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/service-role/",
+            "RoleName": "AWSGlueServiceRole-BookStone",
+            "RoleId": "AROAVLADC2YU5QQF3WKDP",
+            "Arn": "arn:aws:iam::367226181161:role/service-role/AWSGlueServiceRole-BookStone",
+            "CreateDate": "2025-11-08T20:38:57+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "glue.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "StringEquals": {
+                                "aws:SourceAccount": "367226181161"
+                            }
+                        }
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/airflow.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForAmazonMWAA",
+            "RoleId": "AROAVLADC2YUX4LOPLSXY",
+            "Arn": "arn:aws:iam::367226181161:role/aws-service-role/airflow.amazonaws.com/AWSServiceRoleForAmazonMWAA",
+            "CreateDate": "2025-11-01T01:02:55+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "airflow.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "The Service Linked Role used by Amazon Managed Workflows for Apache Airflow.",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/resource-explorer-2.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForResourceExplorer",
+            "RoleId": "AROAVLADC2YUSSJFKCZQH",
+            "Arn": "arn:aws:iam::367226181161:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer",
+            "CreateDate": "2025-10-29T03:31:07+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "resource-explorer-2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/support.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForSupport",
+            "RoleId": "AROAVLADC2YUUTKML6X6B",
+            "Arn": "arn:aws:iam::367226181161:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+            "CreateDate": "2025-09-09T23:37:18+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "support.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Enables resource access for AWS to provide billing, administrative and support services",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForTrustedAdvisor",
+            "RoleId": "AROAVLADC2YUQMT6VSXN2",
+            "Arn": "arn:aws:iam::367226181161:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+            "CreateDate": "2025-09-09T23:37:18+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "trustedadvisor.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "Glue_role",
+            "RoleId": "AROAVLADC2YU5DVVLMH7N",
+            "Arn": "arn:aws:iam::367226181161:role/Glue_role",
+            "CreateDate": "2025-11-08T18:09:08+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "glue.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Allows Glue to call AWS services on your behalf. ",
+            "MaxSessionDuration": 3600
+        }
+    ]
+}
