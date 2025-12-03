@@ -168,7 +168,7 @@ def _write_to_csv() -> None:
     if str(date.today()) == "2025-11-27":
         rows = random.randint(1000, 2000)
     else:
-        rows = random.randint(100, 300)
+        rows = random.randint(50000, 100000)
     
     # Open the CSV file for writing.
     with open("/opt/airflow/data/fleet_raw_data.csv", mode="a", encoding="utf-8", newline="") as file:
