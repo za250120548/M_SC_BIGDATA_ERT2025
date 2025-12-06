@@ -84,7 +84,7 @@ Archivo que configura el cluster de Docker.
 #### work/dags/driven_data_pipeline.py
 Implementacion del DAG consus tareas.
 
-### work/EvidenceProjectoIntegradorFinal.pptx
+### work/EvidenceProjectoIntegradorFinal.pdf
 Presentacion de powerpoint con las evidencias del proyecto.
 
 #### work/requirements.txt
